@@ -282,7 +282,9 @@ export const createStockMovement = async (req: Request, res: Response) => {
       reference_type,
       reference_id,
       notes,
+      createdBy: new Types.ObjectId("684e57d7b336ae494988ea94") 
     });
+console.log(movement);
 
     await InventoryLogModel.create({
       itemId: inventory_item_id,
