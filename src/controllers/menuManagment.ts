@@ -162,7 +162,7 @@ export const createModifier = async (req: Request, res: Response, next: NextFunc
   console.log(req.body);
   
   try {
-    const newModifier = new Modifier(req.body);
+    const newModifier = new Modifier({...req.body,restaurant_id: "68492604b6d92a7171df1a68"});
     const saved = await newModifier.save();
     res.status(201).json(saved);
   } catch (error) {

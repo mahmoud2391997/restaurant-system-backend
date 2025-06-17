@@ -9,7 +9,6 @@ import employeeRoutes from "./routes/employees"
 import rolesRoute from "./routes/role.route"
 // import others...
 import cors from "cors";
-import dotenv from "dotenv"
 import { connectDB } from "./config/db";
 
 const app = express();
